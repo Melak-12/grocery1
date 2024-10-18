@@ -65,7 +65,7 @@ class ProfilePage1 extends StatelessWidget {
 }
 
 class _ProfileInfoRow extends StatelessWidget {
-  const _ProfileInfoRow({super.key});
+  const _ProfileInfoRow();
 
   final List<ProfileInfoItem> _items = const [
     ProfileInfoItem("favorites", 14),
@@ -121,7 +121,7 @@ class ProfileInfoItem {
 }
 
 class _TopPortion extends StatelessWidget {
-  const _TopPortion({super.key});
+  const _TopPortion();
 
   @override
   Widget build(BuildContext context) {

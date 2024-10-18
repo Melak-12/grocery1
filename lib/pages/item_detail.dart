@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery1/pages/home_page.dart';
-import 'package:grocery1/pages/introduction.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ItemDetail extends StatefulWidget {

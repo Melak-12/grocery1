@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:grocery1/firebase_options.dart'; 
 import 'package:flutter/material.dart';
-import 'package:firebase_database/firebase_database.dart'; 
 import 'package:grocery1/pages/introduction.dart';
 import 'package:provider/provider.dart';
 import 'package:grocery1/providers/main_parent_model.dart';
@@ -31,3 +30,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+//file name changed
