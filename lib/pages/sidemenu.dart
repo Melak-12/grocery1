@@ -53,7 +53,7 @@ class _SideMenuState extends State<SideMenu> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return ItemForm();
+                    return const ItemForm();
                   },
                 ),
               );
@@ -77,7 +77,7 @@ class _SideMenuState extends State<SideMenu> {
               "favorites",
               style: GoogleFonts.fahkwang(),
             ),
-            focusColor: Color.fromARGB(255, 59, 122, 136),
+            focusColor: const Color.fromARGB(255, 59, 122, 136),
           ),
           const SizedBox(
             height: 12,
@@ -142,7 +142,7 @@ class _SideMenuState extends State<SideMenu> {
               "Settings",
               style: GoogleFonts.fahkwang(),
             ),
-            focusColor: Color.fromARGB(255, 59, 122, 136),
+            focusColor: const Color.fromARGB(255, 59, 122, 136),
             onTap: () {},
           ),
         ],

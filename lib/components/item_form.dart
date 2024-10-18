@@ -74,7 +74,7 @@ class _ItemFormState extends State<ItemForm> {
       setState(() {
         images = tempImage;
       });
-    } on PlatformException catch (e) {
+    } on PlatformException {
       print("Faild to pick the image");
     }
   }
@@ -224,8 +224,7 @@ class _ItemFormState extends State<ItemForm> {
                           String itemPrice = priceController.text;
                           String itemDisc = discController.text;
 
-                          String timeStamp =
-                              DateTime.now().millisecondsSinceEpoch.toString();
+                          String timeStamp =DateTime.now().millisecondsSinceEpoch.toString();
                           String itemId = "item_$timeStamp";
 
                           storeData(itemId, itemName, itemPrice, itemDisc);

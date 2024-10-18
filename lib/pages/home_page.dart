@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         // automaticallyImplyLeading: false,
-        backgroundColor: Color.fromARGB(255, 55, 66, 67),
+        backgroundColor: const Color.fromARGB(255, 55, 66, 67),
         foregroundColor: Colors.white,
         title: Text(
           'Grocery  ',
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
                       style: const TextStyle(color: Colors.white),
                     )
                   : const Text("0"),
-              child: Icon(
+              child: const Icon(
                 Icons.shopping_cart,
                 color: Colors.white,
               ),
@@ -114,34 +114,34 @@ class _HomePageState extends State<HomePage> {
                 },
               ));
             },
-            child: Image(image: AssetImage('lib/images/burger1.png')),
+            // child: Image(image: AssetImage('lib/images/burger1.png')),
 
-            // child: Hero(
-            //   tag: "profile image",
-            //   child: Padding(
-            //     padding: const EdgeInsets.all(11.0),
-            //     child: FutureBuilder<String>(
-            //       future: mainModel.proImage(),
-            //       builder: (context, snapshot) {
-            //         if (snapshot.connectionState == ConnectionState.waiting) {
-            //           return const CircularProgressIndicator();
-            //         } else {
-            //           final imagePath = snapshot.data!;
-            //           return ClipOval(
-            //             child: Image.file(
-            //               File(imagePath),
-            //               fit: BoxFit
-            //                   .cover, // Ensure the image fills the circular clip
-            //               width: 40, // Adjust the width as needed
-            //               height:
-            //                   40, // Set the height to match the width for a perfect circle
-            //             ),
-            //           );
-            //         }
-            //       },
-            //     ),
-            //   ),
-            // ),
+            child: Hero(
+              tag: "profile image",
+              child: Padding(
+                padding: const EdgeInsets.all(11.0),
+                child: FutureBuilder<String>(
+                  future: mainModel.proImage(),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return const CircularProgressIndicator();
+                    } else {
+                      final imagePath = snapshot.data!;
+                      return ClipOval(
+                        child: Image.file(
+                          File(imagePath),
+                          fit: BoxFit
+                              .cover, // Ensure the image fills the circular clip
+                          width: 40, // Adjust the width as needed
+                          height:
+                              40, // Set the height to match the width for a perfect circle
+                        ),
+                      );
+                    }
+                  },
+                ),
+              ),
+            ),
           ),
           const SizedBox(
             width: 12,

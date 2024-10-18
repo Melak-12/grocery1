@@ -54,6 +54,11 @@ class _MainParentState extends State<MainParent> {
             activeColor: Colors.green,
           ),
           BottomNavyBarItem(
+            icon: const Icon(Icons.shop),
+            title: const Text('cart'),
+            activeColor: Colors.blue,
+          ),
+          BottomNavyBarItem(
               icon: const Icon(Icons.favorite),
               title: Text(
                 'My Items',

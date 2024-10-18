@@ -90,7 +90,7 @@ class _PaymentState extends State<Payment> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 243, 214, 214),
+                      color: const Color.fromARGB(255, 243, 214, 214),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.all(22),

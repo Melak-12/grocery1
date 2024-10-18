@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:grocery1/firebase_options.dart'; // Import Firebase Realtime Database package
+import 'package:grocery1/firebase_options.dart'; 
 import 'package:flutter/material.dart';
-import 'package:firebase_database/firebase_database.dart'; // Import FirebaseDatabase package
+import 'package:firebase_database/firebase_database.dart'; 
 import 'package:grocery1/pages/introduction.dart';
 import 'package:provider/provider.dart';
 import 'package:grocery1/providers/main_parent_model.dart';
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Color.fromARGB(255, 139, 172, 175),
+        primaryColor: const Color.fromARGB(255, 13, 154, 242),
         brightness: Brightness.light,
         splashColor: Colors.green,
       ),

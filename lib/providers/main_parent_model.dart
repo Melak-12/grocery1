@@ -29,7 +29,7 @@ class MainModel extends ChangeNotifier {
   int get size => _size;
   int _cartItemSize = 0;
   int get cartItemsize => _cartItemSize;
-  String _name = "";
+  final String _name = "";
   String get name => _name;
   bool _liked = false;
   bool get liked => _liked;

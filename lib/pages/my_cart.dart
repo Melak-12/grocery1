@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery1/components/payment_method.dart';
-import 'package:grocery1/pages/home_page.dart';
 import 'package:grocery1/pages/main_parent.dart';
 import 'package:grocery1/providers/main_parent_model.dart';
 import 'package:provider/provider.dart';
@@ -145,7 +144,7 @@ class _MyCartState extends State<MyCart> {
                                       'https://media-cdn.tripadvisor.com/media/photo-s/06/ca/7d/be/bar-35-food-drinks.jpg',
                                       fit: BoxFit.cover,
                                     ),
-                              subtitle: Text(itemPrice.toString() + " \$"),
+                              subtitle: Text("$itemPrice \$"),
                               trailing: TextButton(
                                 child: const Icon(
                                   Icons.cancel,
@@ -154,7 +153,7 @@ class _MyCartState extends State<MyCart> {
                                 onPressed: () {
                                   final snackBar = SnackBar(
                                     backgroundColor:
-                                        Color.fromARGB(255, 11, 56, 64),
+                                        const Color.fromARGB(255, 11, 56, 64),
                                     content: const Text('Removing!'),
                                     action: SnackBarAction(
                                       label: 'Undo',
@@ -217,7 +216,7 @@ class _MyCartState extends State<MyCart> {
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) {
-                            return Payment();
+                            return const Payment();
                           },
                         ));
                       },

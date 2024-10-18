@@ -38,9 +38,9 @@ void addToCart(id, name, price) async {
 
 void removeItem(String id) async {
   final pref = await SharedPreferences.getInstance();
-  List<String>? items = pref.getStringList("items");
-  items?.remove(id);
-  pref.setStringList("items", items!);
+  // List<String>? items = pref.getStringList("items");
+  // items.remove(id);
+  // pref.setStringList("items", items);
 }
 
 class _ItemDetailState extends State<ItemDetail> {
@@ -225,11 +225,11 @@ class _ItemDetailState extends State<ItemDetail> {
                       label: Text(
                         "Add to cart", //!call the function here
                         style: GoogleFonts.fahkwang(
-                          textStyle: TextStyle(fontSize: 10),
+                          textStyle: const TextStyle(fontSize: 10),
                         ),
                       ),
                       style: TextButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 38, 124, 109),
+                          backgroundColor: const Color.fromARGB(255, 38, 124, 109),
                           foregroundColor: Colors.white,
                           padding: const EdgeInsets.all(14)),
                     ),

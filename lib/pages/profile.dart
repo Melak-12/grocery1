@@ -32,7 +32,7 @@ class _ProfileState extends State<Profile> {
       if (profileImage != null) {
         prefs.setString("profile_path", profileImage!.path);
       }
-    } on PlatformException catch (e) {
+    } on PlatformException {
       print("couldnt load image");
     }
   }

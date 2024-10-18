@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ProfilePage1 extends StatelessWidget {
-  const ProfilePage1({Key? key}) : super(key: key);
+  const ProfilePage1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 40, 78, 85),
-        title: Text("Profile"),
+        title: const Text("Profile"),
         leading: GestureDetector(
             onTap: () {
               Navigator.pop(context);
@@ -65,7 +65,7 @@ class ProfilePage1 extends StatelessWidget {
 }
 
 class _ProfileInfoRow extends StatelessWidget {
-  const _ProfileInfoRow({Key? key}) : super(key: key);
+  const _ProfileInfoRow({super.key});
 
   final List<ProfileInfoItem> _items = const [
     ProfileInfoItem("favorites", 14),
@@ -121,7 +121,7 @@ class ProfileInfoItem {
 }
 
 class _TopPortion extends StatelessWidget {
-  const _TopPortion({Key? key}) : super(key: key);
+  const _TopPortion({super.key});
 
   @override
   Widget build(BuildContext context) {
